@@ -1,0 +1,64 @@
+/* ------------------------------------------------------------------------------------------  */
+/* ---------------------------------------------------INDEX.PHP ------------------------------*/
+.contenu{
+    width: 100%;
+    margin-top: 50px;
+}
+h1{
+    text-align: center;
+}
+.container_search_class{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: DodgerBlue;
+}
+.container_search_class > div {
+    background-color: #f1f1f1;
+    margin: 5px;
+    text-align: left;
+}
+.petit_bouton {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container_friendslisting{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: DodgerBlue;
+}
+.container_friendsdetails {
+    border: 1px solid #e9ebee;
+    width: 32%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.container_friendspicture{
+    width: 30%;
+}
+.friendspicture{
+    width: 80%;
+    margin: 5px;
+}
+.container_friendsinfo{
+    width: 70%;
+    margin-top: 5%;
+}
+.friendsinfo{
+	color: #365899;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+

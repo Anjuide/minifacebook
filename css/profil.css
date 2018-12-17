@@ -1,0 +1,96 @@
+.contenu{
+    width: 100%;
+    margin-top: 50px;
+}
+h1{
+    text-align: center;
+}
+
+.container_details{
+    border: 1px solid #e9ebee;
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container_picture{
+    width: 30%;
+    margin: 5px auto;
+}
+.picture{
+    width: 80%;
+    margin: 5px;
+}
+
+.container_info{
+    width: 70%;
+}
+.container_info > p{
+	color: #365899;
+    font-size: 32px;
+    line-height: 20px;
+}
+
+
+.containerMusicHobbyPersonne {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: gray;
+    width: 80%;
+    margin: 20px auto;
+}
+.containerMusicHobbyPersonne > div {
+    margin: 10px;
+    padding: 10px;
+  }
+.musicHobby{
+    background-color: red; 
+    width: 20%;
+    margin: auto;
+}
+
+h2{
+	text-align: center;
+	margin: 5px;
+}
+
+.container_friendslisting{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: DodgerBlue;
+}
+.container_friendsdetails {
+    border: 1px solid #e9ebee;
+    width: 45%;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.container_friendspicture{
+    width: 30%;
+}
+.friendspicture{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+.container_friendsinfo{
+    width: 70%;
+    margin-top: 5%;
+}
+.friendsinfo{
+	color: #365899;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+
+
