@@ -70,15 +70,15 @@ a, button {
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #89867e;
-	background: #f9f9f9;
+	background-color: rgb(22, 107, 162);
 	width: 100%;
 }
 a {
-	color: #333;
+	color: white;
 	text-decoration: none;
 }
 a:hover {
-	color: #fff;
+	color: rgb(233, 147, 26);
 }
 /* -------------------------------------------------------------------------------------------------- */
 /* -----------------------------------REGLAGES BARRE DE NAVIGATION----------------------------------- */

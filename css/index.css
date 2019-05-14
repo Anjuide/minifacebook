@@ -1,8 +1,12 @@
 /* ------------------------------------------------------------------------------------------  */
 /* ---------------------------------------------------INDEX.PHP ------------------------------*/
-.contenu{
-    width: 100%;
+
+.container{
+    width: 1200px;
     margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 h1{
     text-align: center;
@@ -27,7 +31,7 @@ h1{
 }
 
 .container_friendslisting{
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-flow: row wrap;
@@ -51,9 +55,11 @@ h1{
     margin-top: 5%;
 }
 .friendsinfo{
-	color: #365899;
+	color: #f6f9ff;
     cursor: pointer;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 

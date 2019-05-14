@@ -21,7 +21,7 @@
 </head>
 
 <body>
-	<div class="contenu">
+	<div class="container">
 		<!-- Titre de la page  -->
 		<h1>Liste de contacts</h1>
 		<form method="post" >
@@ -33,15 +33,6 @@
 					<input type="search" id="site-search" name="q" placeholder="Rechercher par nom">
 					<input type="submit" id="submit" name="submit"  class="petit_bouton"  value="ok">
 				</div>
-				<!-- Classer les personnes par nom ou prénom -->
-				<!-- <div>
-					<label for="classerPersonne">Classer par:</label>
-					<select id="classerPersonne">
-						<a href="formulaire.php"><option value="nom" >Nom</option></a>
-						<option value="prenom">Prénom</option>
-						<option value="formulaire.php">Age</option>
-					</select>
-				</div>	 -->
 			</div> <!-- FIN SEARCH_CLASS -->
 		</form>
 
