@@ -118,7 +118,7 @@ foreach ($allPersonne as $value){
 }
 echo "</ul>";  */
 // Affichage en checkbox(
-function fautquecamarche ($appliBD){
+/* function fautquecamarche ($appliBD){
     $allPersonne = $appliBD->selectAllPersonne ();
     foreach ($allPersonne as $value){  
         echo "<input type='checkbox' name='personne' id='". $value->nom . $value->id ."' value='". $value->id."'>";
@@ -131,7 +131,7 @@ function fautquecamarche ($appliBD){
         </select><br>';
     }
 }
-fautquecamarche ($appliBD);
+fautquecamarche ($appliBD); */
 /* ------------------------------------------------------------------------------------------------------*/
 /* -----------------------------AFFICHAGE PAR UN ID PASSÉ EN PARAMÈTRE---------------------------------- */
 /* ------------------------------------------------------------------------------------------------------*/
@@ -186,7 +186,7 @@ foreach ($_POST['personne'] as $personne_id){
 
 
 // Affichage en une liste non ordonnée des relations
-$personne_Id = 2;
+/* $personne_Id = 2;
 $relation = $appliBD->getPersonneRelationById($personne_Id);
 echo "<ul>";
 foreach ($relation as $value){  
@@ -197,8 +197,11 @@ foreach ($relation as $value){
     
     echo "<li>" . $id . " du numéro " . $id2 . "</li>";
 }
-echo "</ul>"; 
+echo "</ul>";  */
 
+$pattern = "";
 
+$resultat = $appliBD->getPersonneByPatterns ($pattern);
+var_dump($resultat);
 
 ?>

@@ -265,6 +265,26 @@ class Connexion {
         return $relation;
     }
 
+
+
+    public function getPersonneByPatterns ($pattern){
+        // Je prépare ma requête 
+        $requete_prepare = $this->connexion -> prepare (
+            "SELECT *
+            FROM Personne 
+            WHERE nom LIKE :nom OR prenom LIKE :prenom "
+        );
+        // J'execute la requête en passant la valeur
+        $requete_prepare -> execute (
+            array ('nom' => "%$pattern%",
+                    'prenom' => "%$pattern%"
+            )
+        );
+        // Je récupère le résultat de la requête
+        $resultat_pattern = $requete_prepare->fetchAll (PDO::FETCH_OBJ);
+        // Je retourne
+        return $resultat_pattern;
+    }
     
 }
 

@@ -11,7 +11,11 @@
 			include 'header.php';
 			require_once 'connexion.php';
 			$appliBD = new Connexion();
-			$allPersonne = $appliBD->selectAllPersonne ();
+			$pattern = "";
+			if ($_POST != null){
+				$pattern = $_POST['q'];
+			}
+			$allPersonne = $appliBD->getPersonneByPatterns ($pattern);
 			
 		?>
 </head>
@@ -20,25 +24,26 @@
 	<div class="contenu">
 		<!-- Titre de la page  -->
 		<h1>Liste de contacts</h1>
-
-		<!-- BLOC RECHERCHER ET CLASSER -->
-		<div class="container_search_class">
-			<!-- Rechercher une personne par son nom ou prénom -->
-			<div>
-				<label for="site-search">Rechercher un contact</label>
-				<input type="search" id="site-search" name="q" placeholder="Rechercher par nom">
-				<input type="submit" class="petit_bouton"  value="ok">
-			</div>
-			<!-- Classer les personnes par nom ou prénom -->
-			<div>
-				<label for="classerPersonne">Classer par:</label>
-				<select id="classerPersonne">
-					<option value="nom">Nom</option>
-					<option value="prenom">Prénom</option>
-					<option value="age">Age</option>
-				</select>
-			</div>
-		</div> <!-- FIN SEARCH_CLASS -->
+		<form method="post" >
+			<!-- BLOC RECHERCHER ET CLASSER -->
+			<div class="container_search_class">
+				<!-- Rechercher une personne par son nom ou prénom -->
+				<div>
+					<label for="site-search">Rechercher un contact</label>
+					<input type="search" id="site-search" name="q" placeholder="Rechercher par nom">
+					<input type="submit" id="submit" name="submit"  class="petit_bouton"  value="ok">
+				</div>
+				<!-- Classer les personnes par nom ou prénom -->
+				<div>
+					<label for="classerPersonne">Classer par:</label>
+					<select id="classerPersonne">
+						<a href="formulaire.php"><option value="nom" >Nom</option></a>
+						<option value="prenom">Prénom</option>
+						<option value="formulaire.php">Age</option>
+					</select>
+				</div>	
+			</div> <!-- FIN SEARCH_CLASS -->
+		</form>
 
 		<!-- BLOC LISTE DE PERSONNES -->
 		<div class="container_friendslisting">

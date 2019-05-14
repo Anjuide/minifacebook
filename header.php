@@ -16,7 +16,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="#">
+					<a href="index.php">
 						<span class="icon"><i class="icon-home"></i></span>
 						<span>Accueil</span>
 					</a>

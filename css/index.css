@@ -12,10 +12,8 @@ h1{
     margin: auto;
     display: flex;
     justify-content: space-around;
-    background-color: DodgerBlue;
 }
 .container_search_class > div {
-    background-color: #f1f1f1;
     margin: 5px;
     text-align: left;
 }
@@ -33,7 +31,6 @@ h1{
     margin: auto;
     display: flex;
     flex-flow: row wrap;
-    background-color: DodgerBlue;
 }
 .container_friendsdetails {
     border: 1px solid #e9ebee;
