@@ -1,16 +1,5 @@
 /* ------------------------------------------------------------------------------------------  */
 /* ---------------------------------------------------INDEX.PHP ------------------------------*/
-
-.container{
-    width: 1200px;
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    
-}
-h1{
-    text-align: center;
-}
 .container_search_class{
     width: 80%;
     margin: auto;

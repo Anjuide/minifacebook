@@ -21,7 +21,7 @@
 	?>
 </head>
 <body>
-	<div class="contenu">
+	<div class="container">
 		<!-- Titre de la page  -->
 		<h1>A PROPOS</h1>
 
