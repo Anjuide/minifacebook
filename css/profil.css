@@ -1,6 +1,6 @@
 .container_details{
     border: 1px solid #e9ebee;
-    width: 50%;
+    width: 80%;
     margin: 20px auto;
     display: flex;
     flex-flow: row wrap;
@@ -19,7 +19,7 @@
     width: 70%;
 }
 .container_info > p{
-	color: #365899;
+	color: white;
     font-size: 32px;
     line-height: 20px;
 }
@@ -35,15 +35,11 @@
 .containerMusicHobbyPersonne > div {
     margin: 10px;
     padding: 10px;
+    color: #e9ebee;
   }
 .musicHobby{
     width: 20%;
     margin: auto;
-}
-
-h2{
-	text-align: center;
-	margin: 5px;
 }
 
 .container_friendslisting{
@@ -62,18 +58,20 @@ h2{
 }
 .container_friendspicture{
     width: 30%;
+    margin: 5px;
 }
 .friendspicture{
-    height: 100px;
-    width: 100px;
+    width: 100%;
     margin: auto;
 }
 .container_friendsinfo{
     width: 70%;
     margin-top: 5%;
+    margin-left: 15px;
 }
 .friendsinfo{
-	color: #365899;
+    color: #365899;
+    color: white;
     cursor: pointer;
     text-decoration: none;
 }
