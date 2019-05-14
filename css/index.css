@@ -1,23 +1,65 @@
 /* ------------------------------------------------------------------------------------------  */
 /* ---------------------------------------------------INDEX.PHP ------------------------------*/
-.container_search_class{
+.container_search{
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-around;
 }
-.container_search_class > div {
+.container_search > div {
     margin: 5px;
     text-align: left;
 }
-.petit_bouton {
-    background-color: #4CAF50;
-    color: white;
-    margin-top: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/* .search-input {
+     padding: 10px;
+     font-size: 16px;
+     border-width: 1px;
+     border-color: #CCCCCC;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 28px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
 }
+  */
+/* Style the search field */
+.search-input {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  /* border-radius: 28px 0px 0px 28px; */
+}
+.search-input:focus {
+     outline:none;
+}
+/* Style the submit button */
+.search-button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  /* border-radius: 0px 28px 28px 0px; */
+}
+
+.search-button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+.container_search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 .container_friendslisting{
     width: 100%;
