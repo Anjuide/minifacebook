@@ -1,83 +1,88 @@
-.container_details{
-    border: 1px solid #e9ebee;
+.container_details, .container_relation, .container_MusicHobby{
     width: 80%;
     margin: 20px auto;
+    background-color: white;
+    border: 1px solid #e9ebee;
+    border-radius: 5px; 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap; 
 }
-
+.container_enTete{
+    width: 100%;
+    background-color: #e9ebee;
+}
+.enTete{
+    color: rgb(22, 145, 190);
+    text-align: center;
+    text-transform: uppercase;
+}
 .container_picture{
     width: 30%;
     margin: 5px auto;
 }
 .picture{
     width: 80%;
-    margin: 5px;
+    margin: 5px auto;
+    display: block;
 }
-
 .container_info{
     width: 70%;
+    margin: 5px auto;
 }
-.container_info > p{
+.info{
 	color: white;
     font-size: 32px;
     line-height: 20px;
 }
-
-
-.containerMusicHobbyPersonne {
+/* MUSIQUE ET HOBBIES */
+.container_music{
+    width: 50%;
+    margin-top: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+.container_music h2, .container_hobbies h2{
+text-align: left;
+}
+.container_hobbies{
+    width: 50%;
+    margin-top: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+/* LISTE DE CONTACT */
+.container_friends{
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    width: 80%;
-    margin: 20px auto;
 }
-.containerMusicHobbyPersonne > div {
-    margin: 10px;
-    padding: 10px;
-    color: #e9ebee;
-  }
-.musicHobby{
-    width: 20%;
-    margin: auto;
-}
-
-.container_friendslisting{
-    width: 70%;
-    margin: auto;
-    display: flex;
-    flex-flow: row wrap;
-}
-.container_friendsdetails {
+.container_friend_details{
     border: 1px solid #e9ebee;
-    width: 45%;
-    height: 100px;
+    width: 30%;
     margin: 5px;
     display: flex;
     justify-content: space-around;
 }
-.container_friendspicture{
+.container_friend_picture{
     width: 30%;
     margin: 5px;
 }
-.friendspicture{
+.friend_picture{
     width: 100%;
     margin: auto;
+    display: block;
 }
-.container_friendsinfo{
+.container_friend_info{
     width: 70%;
     margin-top: 5%;
     margin-left: 15px;
 }
-.friendsinfo{
+.friend_info{
     color: #365899;
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
-
-
-
-
-
-
