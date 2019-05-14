@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.9
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 14 mai 2019 à 10:01
--- Version du serveur :  5.7.21
--- Version de PHP :  5.6.35
+-- Généré le :  mar. 14 mai 2019 à 14:12
+-- Version du serveur :  5.7.24
+-- Version de PHP :  7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -76,8 +76,7 @@ INSERT INTO `musique` (`id`, `type`) VALUES
 (4, 'Rock'),
 (5, 'Hip-Hop'),
 (6, 'Pop'),
-(7, 'Reggae'),
-(68, 'Montest');
+(7, 'Reggae');
 
 -- --------------------------------------------------------
 
@@ -94,24 +93,28 @@ CREATE TABLE IF NOT EXISTS `personne` (
   `date_naissance` date DEFAULT NULL,
   `statut_couple` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `personne`
 --
 
 INSERT INTO `personne` (`id`, `nom`, `prenom`, `url_photo`, `date_naissance`, `statut_couple`) VALUES
-(1, 'Gnamba', 'Angra Ange Anselme', 'Photodeange.ch', '1989-01-27', 'En couple'),
-(2, 'Cerdelli', 'Marine Coralie', 'Photodemarine.ch', '1993-06-07', 'En couple'),
-(3, 'Bouo', 'Odile Anastasie', 'PhotodeOdile.ch', '1965-04-15', 'CÃ©libataire'),
-(4, 'Friederich', 'Bernhard', 'Photodebernard.ch', '1960-03-10', 'CÃ©libataire'),
-(5, 'Palazzotto', 'Sabine Valérie', 'Photodesabine.ch', '1978-08-29', 'MariÃ©'),
-(6, 'Palazzotto', 'Paolo', 'Photodepaolo.ch', '1960-02-28', 'MariÃ©'),
-(7, 'Damato', 'Alexandro', 'PhotodeAlex.ch', '1988-10-05', 'En couple'),
-(8, 'Xiang', 'Yuka', 'PhotodeYuka.ch', '1986-02-05', 'En couple'),
-(9, 'Lalle Bi', 'Jacques Arnaud', 'Photodejacques.ch', '2003-06-14', 'CÃ©libataire'),
-(10, 'Affin', 'Walid', 'Photodewalid.ch', '2003-09-14', 'CÃ©libataire'),
-(11, 'PÃ©dÃ©a', 'Jeannette', 'Photodejeannette.ch', '1935-01-01', 'CÃ©libataire');
+(1, 'Zuckerberg', 'Mark', 'https://heelsagency.com/wp-content/uploads/2014/11/Mark-Zuckerberg-Heels-Agency-Demi-Karan-9.jpg', '1984-05-14', 'Marié'),
+(2, 'Saverin', 'Edouardo', 'http://static3.bornrichimages.com/cdn2/500/500/91/c/wp-content/uploads/s3/1/2012/05/22/1337668925_300x300.jpg', '1982-03-19', 'Marié'),
+(3, 'Moskovitz', 'Dustin', 'https://upload.wikimedia.org/wikipedia/commons/8/87/Dustin_Moskovitz_Headshot.jpg', '1984-05-22', 'Marié'),
+(4, 'Hugues', 'Chris', 'https://queerty-prodweb.s3.amazonaws.com/wp/docs/2016/01/1207594-slide-s-6-chris-hughes.jpg', '1960-03-10', 'CÃ©libataire'),
+(5, 'Barack', 'Obama', 'http://s.plurielles.fr/mmdia/i/61/4/people-barack-obama-2542614_123.jpg?v=1', '1961-08-04', 'MariÃ©'),
+(6, 'Michelle', 'Obama', 'https://www.blackenterprise.com/wp-content/blogs.dir/1/files/2011/02/michelleobama2011.jpg', '1964-01-17', 'MariÃ©'),
+(7, 'Bezos', 'Jeff', 'https://files.startupranking.com/person/thumb/235_4f6851a83a5d71417e1d3680daeefe2345f28e91_jeff-bezos_l.png', '1964-01-12', 'CÃ©libataire'),
+(8, 'Larry', 'Page', 'https://be1world.ca/wp-content/uploads/2017/11/larry.jpg', '1973-03-26', 'MariÃ©'),
+(9, 'Sergey', 'Brin', 'https://www.kliktrend.com/wp-content/uploads/2019/02/Sergey-Brin.jpg', '1973-08-21', 'CÃ©libataire'),
+(10, 'Sundar', 'Pichai', 'https://i2.wp.com/indianewengland.com/wp-content/uploads/2015/12/Sundar-Pichai-e1482896983828.jpg?fit=500%2C500&ssl=1', '1972-07-12', 'En couple'),
+(11, 'Spiegel', 'Evan', 'http://www.divergence-fm.org/uploads/kuoevanspiegel.jpeg', '1990-06-04', 'En couple'),
+(12, 'Lovelace', 'Ada', 'https://i1.sndcdn.com/artworks-000462527769-goi06b-t500x500.jpg', '1815-12-10', 'CÃ©libataire'),
+(13, 'Hamilton', 'Margaret', 'https://ada.vc/wp-content/uploads/2018/03/margaret-2-500x500.jpg', '1936-08-17', 'En couple'),
+(14, 'Allen', 'Frances', 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Allen_mg_2528-c.jpg/500px-Allen_mg_2528-c.jpg', '1932-01-01', 'Marié'),
+(15, 'Stallman', 'Richard', 'https://d2r9nfiii89r0l.cloudfront.net/article/images/740x500/dimg/m_img_444.jpg', '1953-03-16', 'Célibataire');
 
 -- --------------------------------------------------------
 
