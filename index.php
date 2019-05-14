@@ -34,14 +34,14 @@
 					<input type="submit" id="submit" name="submit"  class="petit_bouton"  value="ok">
 				</div>
 				<!-- Classer les personnes par nom ou prénom -->
-				<div>
+				<!-- <div>
 					<label for="classerPersonne">Classer par:</label>
 					<select id="classerPersonne">
 						<a href="formulaire.php"><option value="nom" >Nom</option></a>
 						<option value="prenom">Prénom</option>
 						<option value="formulaire.php">Age</option>
 					</select>
-				</div>	
+				</div>	 -->
 			</div> <!-- FIN SEARCH_CLASS -->
 		</form>
 
